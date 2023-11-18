@@ -1,6 +1,6 @@
 import userProfile from './user.json'
 import React from 'react';
-import Statistics from 'components/Statistics/Statistics';
+import css from "./Profile.module.css"
 
 const Profile = ({username, tag, location, avatar, stats, children}) =>{
 
@@ -8,7 +8,7 @@ const Profile = ({username, tag, location, avatar, stats, children}) =>{
 
     return(
 
-        <div class="profile">
+        <div className={css.profile}>
         <div class="description">
         <img
           src={avatar || "https://cdn-icons-png.flaticon.com/512/1077/1077012.png"}

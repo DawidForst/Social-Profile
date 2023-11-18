@@ -1,11 +1,24 @@
 import React from "react";
 
-
-const FriendListItem = (props) =>{
+const FriendListItem = ({test}) =>{
 
 return(
 
+    <div>
 
+<ul>
+
+ {test.map((friend,i)=>{
+    //  console.log(i);
+     return(
+        <li key={i} ><img src={friend.avatar}></img>
+           
+                    <p> {friend.name}</p>
+        </li>
+     );
+ })}
+</ul>
+</div>
 
 
 

@@ -1,31 +1,18 @@
 import friendsData from "./friends.json"
 import React from 'react';
+import FriendListItem from "components/FriendListItem/FriendListItem";
 
 
-const FriendList =({friends, children}) =>{
-
-    console.log({friendsData})
+const FriendList =({ friends}) =>{
 
 
 return(
+<div>
+    
+<FriendListItem test={friends}/>
 
-    <div>
-     <ul>
-        {friends.map((friend, i)=>(
-            
-            <li>
-                <div key={friend[i]}></div>
-                <img src={friend.avatar}></img>
-                <p>is online: {friend.isOnline}</p>
-                {friend.name}
-            </li>
-
-
-
-))}
-
-</ul>
-    </div>
+</div>
+   
 )
 
 }
