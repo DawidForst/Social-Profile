@@ -10,11 +10,12 @@ const Profile = ({username, tag, location, avatar, stats, children}) =>{
 
         <div className={css.profile}>
         <div class="description">
+        <div className={css.avatar_container}>
         <img
           src={avatar || "https://cdn-icons-png.flaticon.com/512/1077/1077012.png"}
           alt="User avatar"
-          className="avatar"
-        />
+          className={css.avatar}
+        /></div>
           <p class="name">{username}</p>
           <p class="tag">{tag}</p>
           <p class="location">{location}</p>
