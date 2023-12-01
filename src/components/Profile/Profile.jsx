@@ -1,4 +1,4 @@
-import userProfile from './user.json'
+// import userProfile from './user.json'
 import React from 'react';
 import css from "./Profile.module.css"
 

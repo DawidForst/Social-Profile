@@ -1,5 +1,5 @@
 import React from "react";
-import transactionData from "./transactions.json"
+// import transactionData from "./transactions.json"
 
 
 const TransactionHistory = ({transacions}) => {
