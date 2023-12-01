@@ -11,7 +11,9 @@ return(
  {test.map((friend,i)=>{
     //  console.log(i);
      return(
-        <li key={i} ><img src={friend.avatar}></img>
+        <li key={i} ><img src={friend.avatar}
+                        alt=""
+        />
            
                     <p> {friend.name}</p>
         </li>

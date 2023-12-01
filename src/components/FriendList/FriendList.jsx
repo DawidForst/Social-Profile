@@ -1,4 +1,3 @@
-import friendsData from "./friends.json"
 import React from 'react';
 import FriendListItem from "components/FriendListItem/FriendListItem";
 
