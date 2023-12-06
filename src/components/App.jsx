@@ -13,15 +13,19 @@ export const App = (username, tag, avatar, stats, location) => {
     <div>
      
     <Profile  
-   username={userProfile.username} 
-   tag={userProfile.tag}
-   location={userProfile.location}
-   avatar={userProfile.avatar}
-   stats={userProfile.stats}
-    />
-  <Statistics/>
-  <FriendList friends={friendsData}/>
-<TransactionHistory transacions={TransactionData}/>
+      username={userProfile.username} 
+      tag={userProfile.tag}
+      location={userProfile.location}
+      avatar={userProfile.avatar}
+      stats={userProfile.stats}
+      >
+        <Statistics 
+          title="Statistics"
+        />
+    </Profile>
+  
+  {/* <FriendList friends={friendsData}/>
+<TransactionHistory transacions={TransactionData}/> */}
 
     </div>
 
