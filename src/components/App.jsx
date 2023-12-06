@@ -25,8 +25,8 @@ export const App = (username, tag, avatar, stats, location) => {
         />
     </Profile>
   
-  {/* <FriendList friends={friendsData}/>
-<TransactionHistory transacions={TransactionData}/> */}
+  <FriendList friends={friendsData}/>
+<TransactionHistory transacions={TransactionData}/>
 
     </div>
 
