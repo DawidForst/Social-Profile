@@ -39,8 +39,8 @@ const Profile = ({username, tag, location, avatar, stats, children}) =>{
 
 
           </ul>
-         
           {children}
+         
         </div>
 
 

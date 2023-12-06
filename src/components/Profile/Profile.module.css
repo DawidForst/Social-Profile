@@ -2,18 +2,18 @@
 
 background-color: #ccd5f3;
 display: flex;
-/* align-items: center; */
 justify-content: center;
 height: 100vh;
+min-width: 320px;
 
 }
 
 .description{
     margin-top: 10px;
     background-color: white;
-    /* width: 200px; */
     max-height: 215px;
-    
+    border-top-right-radius: 3%;
+border-top-left-radius: 3%;
 }
 .avatar_container{
     margin-top: 20px;
@@ -58,12 +58,13 @@ height: 100vh;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 0px;
   }
   
   .stats li {
     background-color: #c1c9ee;
     text-align: center;
-    flex: 1; /* Elastyczność dla równego podziału przestrzeni */
+    flex: 1; 
     border-right: 1px solid #ccd5f3; 
     
   }

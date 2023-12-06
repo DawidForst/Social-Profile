@@ -20,7 +20,8 @@ export const App = (username, tag, avatar, stats, location) => {
       stats={userProfile.stats}
       >
         <Statistics 
-          title="Statistics"
+          title="UPLOAD STATS"
+          
         />
     </Profile>
   

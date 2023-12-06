@@ -7,11 +7,13 @@ const Statistics = ({title, stats}) =>{
     stats={data}
     return(
         <div>
-            <section >
-            <h2>{title}</h2>
-            <ul>
+            <section className={css.statistics}>
+            <h3 className={css.title}>{title}</h3>
+            <ul className={css.stat_list}>
                 {data.map((item, i)=>(
-                    <li key={i}>{item.label} : {item.percentage} </li>
+                    <li key={i} className={css.item}>
+                        <div className={css.label}>{item.label} </div>
+                        <div className={css.percentage}>{item.percentage}%</div> </li>
                 )
                 )}
 
@@ -21,7 +23,7 @@ const Statistics = ({title, stats}) =>{
         </div>
 
 
-    )
+    )   
 }
 
 
