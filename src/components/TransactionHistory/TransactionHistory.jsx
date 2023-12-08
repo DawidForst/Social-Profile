@@ -1,21 +1,28 @@
 import React from "react";
-// import transactionData from "./transactions.json"
+import css from "./TransactionHistory.module.css"
+
 
 
 const TransactionHistory = ({transacions}) => {
+    const headers = ['TYPE', 'AMOUNT', 'CURRENCY'];
 
     return (
         <div>
-            <table>
+            <table className={css.Table}>
                 <thead>
+                    <tr>
+                      {headers.map((header, index) => (
+                      <th key={index}>{header}</th>
+                     ))}
+
+                    </tr>
                 {transacions.map((transacion,i)=>{
 
                     return(
                         <tr key={i}>
-                            <th>id: {transacion.id}</th>
-                            <th>type: {transacion.type}</th>
-                            <th>amount: {transacion.amount}</th>
-                            <th>currency: {transacion.currency}</th>
+                            <td> {transacion.type}</td>
+                            <td> {transacion.amount}</td>
+                            <td> {transacion.currency}</td>
                             
 
                         </tr>

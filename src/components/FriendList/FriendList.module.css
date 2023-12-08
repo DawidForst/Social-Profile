@@ -1,0 +1,6 @@
+.friend_list{
+display: flex;
+justify-content: center;
+list-style: none;
+background-color:#ccd5f3;
+}
