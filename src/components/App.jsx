@@ -23,10 +23,11 @@ export const App = (username, tag, avatar, stats, location) => {
           title="UPLOAD STATS"
           
         />
+        <FriendList friends={friendsData}/>
+<TransactionHistory transacions={TransactionData}/>
     </Profile>
   
-  <FriendList friends={friendsData}/>
-<TransactionHistory transacions={TransactionData}/>
+  
 
     </div>
 
